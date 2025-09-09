@@ -16,7 +16,7 @@ const AppContextProvider = ({children}) => {
 
     const checkUserLoggedInOrNot = async () => {
         try {
-            const {data} = await axios.get("/api/user/is-auth");
+            const {data} = await axios?.get("/api/user/is-auth");
             if(data.success){
                 setUser(true);
             }
